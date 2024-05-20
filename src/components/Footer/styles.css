@@ -1,0 +1,99 @@
+.footer-section {
+    background: black;
+    color: white;
+    padding: 3rem 15rem;
+    margin-top: 5rem;
+}
+
+.footer-section div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-tabs {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-tabs li {
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.footer-mail {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.footer-hr {
+    opacity: .2;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    margin-top: 2rem;
+}
+
+.contact-section div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.address span:nth-child(2) {
+    padding: 0.2rem 0;
+}
+
+.two {
+    margin-left: 4rem;
+}
+
+.gray {
+    opacity: 0.7;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media span {
+    font-size: 0.8rem;
+}
+
+.logo {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo h2 {
+    font-size: 6rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.logo span {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}

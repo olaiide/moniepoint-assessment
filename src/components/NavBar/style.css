@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+    padding: 0 1rem;
+    border-radius: 12px;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    /* // background: red; */
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    background: #333333;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 12px;
+    margin: 0.5rem;
+}
+
+.tabs li {
+    font-size: 0.8rem;
+    color: white;
+    cursor: pointer;
+}

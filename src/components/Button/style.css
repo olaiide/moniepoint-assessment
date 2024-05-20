@@ -1,0 +1,12 @@
+.button {
+    font-size: 0.7rem;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 0rem 2rem;
+    outline: none;
+    height: 3rem;
+    border-radius: 0.8rem;
+    border: none;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
