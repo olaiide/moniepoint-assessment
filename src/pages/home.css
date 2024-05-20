@@ -76,7 +76,7 @@
 
 .strategic-card-wrapper {
     display: flex;
-    height: 18rem;
+    height: 20rem;
     margin-top: 2rem;
     justify-content: space-between;
 }
@@ -296,6 +296,19 @@
 
 .efficiency-section {
     padding: 3rem 15rem;
+}
+
+.stats-graph {
+    border: 1px solid #EAEAEA;
+    border-radius: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+.stats-text {
+    font-size: 0.5rem !important;
+    padding-top: 0.7rem;
+    padding-left: 0.7rem;
+    margin: 0;
 }
 
 .data-section {

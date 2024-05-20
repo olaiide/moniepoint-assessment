@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import NavBar from "../components/NavBar";
 import { FaStar, FaArrowUp } from "react-icons/fa";
 import Analytics from "../assets/Screenshot 2024-05-15 at 14.37.43.png";
@@ -10,11 +10,36 @@ import DataImage from "../assets/data.png";
 import Total from "../assets/Screenshot 2024-05-20 at 06.24.33.png";
 import firstImage from "../assets/Screenshot 2024-05-19 at 19.22.42.png";
 import thirdImage from "../assets/Screenshot 2024-05-19 at 19.22.57.png";
+import Graph from "../assets/Capture.png";
 import "./home.css";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const LandingPage = () => {
+  const revealRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      revealRef.current,
+      { opacity: 0, y: 300 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 5,
+        scrollTrigger: {
+          trigger: revealRef.current,
+          start: "top 80%", // Element's top hits 80% of the viewport
+          end: "top 30%", // Element's top hits 30% of the viewport
+          scrub: 5,
+        },
+      }
+    );
+  }, []);
+
   return (
     <div>
       <NavBar />
@@ -124,6 +149,13 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
+              <div className="stats-graph">
+                <h4 className="stats-text">View Statistics</h4>
+                <img
+                  src={Graph}
+                  style={{ width: "100%", height: "fitContent" }}
+                />
+              </div>
             </div>
           </div>
           <div className="transaction-wrapper">
@@ -224,7 +256,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section className="data-section">
+      <section className="data-section" ref={revealRef}>
         <div>
           <div className="data-content">
             <h4>
