@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import NavBar from "../components/NavBar";
 import { FaStar, FaArrowUp } from "react-icons/fa";
 import { BiSolidOffer } from "react-icons/bi";
@@ -90,6 +92,11 @@ const LandingPage = () => {
     //   }
     // );
   }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // duration of animation in milliseconds
+    });
+  }, []);
 
   // useEffect(() => {
   //   const counter = setInterval(() => {
@@ -107,7 +114,7 @@ const LandingPage = () => {
     <div>
       <div style={{}}>
         <NavBar />
-        <div className="heroo">
+        <div className="heroo" data-aos="fade-up">
           <div>
             <div className="analytics">
               <img src={Analytics} style={{ width: "10rem", height: "6rem" }} />
@@ -138,7 +145,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <section className="strategic">
+      <section className="strategic" data-aos="fade-up">
         <div className="strategic-header">
           <h3>
             Your key to strategic <br />
@@ -286,7 +293,7 @@ const LandingPage = () => {
           </span>
         </div>
       </section>
-      <section className="efficiency-section">
+      <section className="efficiency-section" data-aos="fade-up">
         <h2 className="h2">
           Maximize <span style={{ opacity: "0.2" }}>efficiency</span> <br />{" "}
           with our intuitive
@@ -323,7 +330,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="data-section" ref={revealRef}>
+      <section className="data-section" ref={revealRef} data-aos="fade-up">
         <div>
           <div className="data-content">
             <h4>
@@ -357,9 +364,9 @@ const LandingPage = () => {
             />
           </div>
         </div>
-        <h1>Ramos</h1>
+        <h1 data-aos="fade-right">Ramos</h1>
       </section>
-      <section className="control-section">
+      <section className="control-section" data-aos="fade-up">
         <div>
           <h2 className="h2">
             We give you full <br />{" "}
@@ -484,7 +491,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section className="get-started-section">
+      <section className="get-started-section" data-aos="fade-up">
         <img
           src={Started}
           style={{ width: "6.5rem", height: "8rem", margin: "0 auto" }}
@@ -510,7 +517,7 @@ const LandingPage = () => {
           </Button>
         </div>
       </section>
-      <Footer />
+      <Footer data-aos="fade-up" />
     </div>
   );
 };

@@ -1,10 +1,17 @@
-import React from "react";
 import "./styles.css";
 import qr from "../../assets/Screenshot 2024-05-19 at 14.54.58.png";
+import React, { useEffect } from "react";
+import AOS from "aos";
+
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // duration of animation in milliseconds
+    });
+  }, []);
   return (
     <footer className="footer-section">
-      <div>
+      <div data-aos="fade-up">
         <ul className="footer-tabs">
           <li>About</li>
           <li>Why Us</li>
@@ -15,7 +22,7 @@ const Footer = () => {
         <h3 className="footer-mail"> hello@ramos.com</h3>
       </div>
       <hr className="footer-hr" />
-      <div className="contact-section">
+      <div className="contact-section" data-aos="fade-up">
         <div>
           <div className="address">
             <span>Warrensville Heights</span>
@@ -34,14 +41,12 @@ const Footer = () => {
           <span>Facebook</span>
         </div>
       </div>
-      <div className="scan">
+      <div className="scan" data-aos="fade-up">
         <h2>
           Ramos<sup>&reg;</sup>
         </h2>
-
         <span>Policy policy</span>
         <span>License agreement</span>
-
         <img src={qr} />
       </div>
     </footer>
