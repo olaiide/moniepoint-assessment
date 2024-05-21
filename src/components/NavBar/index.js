@@ -7,16 +7,20 @@ const NavBar = () => {
     <nav className="nav">
       <div className="logo">
         <RiLinkM />
-        <h4>ramos</h4>
+        <h4 style={{ fontSize: "20px", color: "white", }}>ramos</h4>
       </div>
-      <ul className="tabs">
-        <li>Dashboard</li>
-        <li>Reports</li>
-        <li>Documents</li>
-        <li>History</li>
-        <li>Settings</li>
-      </ul>
-      <Button>Sign up</Button>
+      <div>
+        <ul className="tabs">
+          <li>Dashboard</li>
+          <li>Reports</li>
+          <li>Documents</li>
+          <li>History</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+      <div>
+        <Button>Sign up</Button>
+      </div>
     </nav>
   );
 };

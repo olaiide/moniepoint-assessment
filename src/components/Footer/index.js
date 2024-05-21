@@ -34,7 +34,7 @@ const Footer = () => {
           <span>Facebook</span>
         </div>
       </div>
-      <div className="logo">
+      <div className="scan">
         <h2>
           Ramos<sup>&reg;</sup>
         </h2>

@@ -17,6 +17,7 @@
     width: 25rem;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 
 .footer-tabs li {
@@ -73,13 +74,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: right;
 }
 
 .social-media span {
     font-size: 0.8rem;
 }
 
-.logo {
+.scan {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
@@ -87,13 +89,13 @@
 
 }
 
-.logo h2 {
+.scan h2 {
     font-size: 6rem;
     font-weight: 300;
     margin: 0;
 }
 
-.logo span {
+.scan span {
     opacity: 0.7;
     font-size: 0.8rem;
 }
